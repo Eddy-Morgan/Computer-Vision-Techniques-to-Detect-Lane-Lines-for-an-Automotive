@@ -28,6 +28,7 @@ def region_of_interest(image):
     masked_image = cv2.bitwise_and(image, mask)
     return masked_image
 
+#Uncomment this section to train with image.
 
 #image = cv2.imread("test_image-1.jpg")
 #lane_image = np.copy(image)
@@ -39,6 +40,8 @@ def region_of_interest(image):
 #combo_image = cv2.addWeighted(lane_image, 0.8, line_image,1,1)
 #cv2.imshow("result",combo_image)
 
+
+#This section trains with the lane video
 
 cap = cv2.VideoCapture("test2.mp4")
 while(cap.isOpened()):
